@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+</head>
+<style>
+#nav{
+    width:100%;
+    height:90px;
+    background-color: white;
+    display:flex;
+    
+    align-items: center;
+    color: black;
+    justify-content: space-around;
+
+}
+#nav:first-child{
+    align-self: center;
+    color:black;
+    
+}
+#nav div{
+    font-size: 16px;
+    color: black;
+}
+form{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(245, 238, 238);
+} 
+</style>  
+
+<body>
+    <div id="nav">
+        <a href="./index.html">
+            <h1 style="color: black;">Add Students</h1>
+        </a>
+        <a href="./students.html">
+            <h1 style="color: black;">Students Database</h1>
+        </a>
+        <a href="./admitted.html">
+            <h1 style="color: black;">Admitted</h1>
+        </a>
+        <a href="./rejected.html">
+            <h1 style="color: black;"> Rejected </h1>
+        </a>
+    </div>
+    <h1 style="text-align: center">This form for admission in Masai School</h1>
+    <form class="form">
+        
+        <input placeholder="Name" type="text" id="name"><br>
+        <input placeholder="Email" type="email" id="email"><br>
+        <input placeholder="Phone Number" type="number" id="phone"><br>
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br>
+        <select id="course">
+            <option value="Web-Development">Web-Development</option>
+            <option value="Android-Development">Android-Development</option>
+            <option value="Data-Analitics">Data-Analitics</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    
+    </form>
+</body>
+<script src="./index.js"></script>
+
+</html>
